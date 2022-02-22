@@ -1,6 +1,6 @@
 module.exports = async () => {
   try {
-    const {ux} = require('cli-ux')
-    await ux.flush()
-  } catch (error) { }
+    const {CliUx} = require('./lib')
+    await CliUx.ux.flush()
+  } catch {}
 }
